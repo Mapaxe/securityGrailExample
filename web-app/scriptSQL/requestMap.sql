@@ -1,0 +1,8 @@
+insert into request_map (id, version, url, config_attribute) values (1, 0, '/admin/dbconsole/**', 'IS_AUTHENTICATED_ANONYMOUSLY')
+insert into request_map (id, version, url, config_attribute) values (2, 0, '/js/**', 'IS_AUTHENTICATED_ANONYMOUSLY')
+insert into request_map (id, version, url, config_attribute) values (3, 0, '/css/**', 'IS_AUTHENTICATED_ANONYMOUSLY')
+insert into request_map (id, version, url, config_attribute) values (4, 0, '/images/**', 'IS_AUTHENTICATED_ANONYMOUSLY')
+insert into request_map (id, version, url, config_attribute) values (5, 0, '/login/**', 'IS_AUTHENTICATED_ANONYMOUSLY')
+insert into request_map (id, version, url, config_attribute) values (6, 0, '/logout/**', 'IS_AUTHENTICATED_ANONYMOUSLY')
+insert into request_map (id, version, url, config_attribute) values (7, 0, '/', 'IS_AUTHENTICATED_ANONYMOUSLY')
+insert into request_map (id, version, url, config_attribute) values (8, 0, '/*', 'IS_AUTHENTICATED_FULLY')

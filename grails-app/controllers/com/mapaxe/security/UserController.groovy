@@ -7,7 +7,6 @@ import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class UserController {
-
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {

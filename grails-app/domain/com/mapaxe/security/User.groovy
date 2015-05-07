@@ -1,5 +1,8 @@
 package com.mapaxe.security
 
+import org.hibernate.envers.Audited
+
+@Audited
 class User {
 
 	transient springSecurityService

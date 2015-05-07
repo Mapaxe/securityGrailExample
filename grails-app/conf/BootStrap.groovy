@@ -55,7 +55,9 @@ class BootStrap {
 
 
         println "########### Start Create Admin User ###########"
-        def adminUser = new User(username: 'admin', password: 'admin').save(flush: true)
+        User.withTransaction {
+            def adminUser = new User(username: 'admin', password: 'admin').save(flush: true)
+
         UserRoleGroup.create(adminUser,adminGrup,true)
         println "########### End Create Admin User ###########"
 
@@ -80,6 +82,7 @@ class BootStrap {
         UserRoleGroup.create(adminUser2,roleAdminGrup,true)
         UserRoleGroup.create(adminUser2,roleGroupAdminGrup,true)
         println "########### End Create AdminUser ###########"
+        }
 
     }
     def destroy = {

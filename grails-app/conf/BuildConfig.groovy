@@ -37,6 +37,8 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.27'
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.3"
+        compile 'joda-time:joda-time:2.7'
+        compile 'joda-time:joda-time-hibernate:1.4'
     }
 
     plugins {
@@ -66,5 +68,7 @@ grails.project.dependency.resolution = {
         //compile ":coffee-asset-pipeline:1.5.0"
         //compile ":handlebars-asset-pipeline:1.3.0.1"
         compile ':spring-security-core:2.0-RC4'
+        compile ':audit-logging:1.0.4'
+        compile ":joda-time:1.5"
     }
 }
